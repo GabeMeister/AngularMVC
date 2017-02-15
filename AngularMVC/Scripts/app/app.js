@@ -1,4 +1,5 @@
-﻿var app = angular.module('myapp', ['ngRoute']);
+﻿//RIGHT HERE
+var app = angular.module('myapp', ['ngRoute']);
 
 app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
@@ -23,6 +24,5 @@ app.config(function ($routeProvider, $locationProvider) {
             controller: 'ErrorController'
         });
 
-    //$locationProvider.html5Mode(false).hashPrefix('!'); // This is for Hashbang Mode
     $locationProvider.html5Mode(true);
 });
